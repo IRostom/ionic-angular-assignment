@@ -1,20 +1,117 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Logo </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section id="hero">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <h1>
+            Discover the magic of our<br class="ion-hide-sm-down" />
+            surprise box
+          </h1>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <p>
+            Unleash your child's curiosity with our educational subscription box
+            filled with fun and learning.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-button class="subscribe">
+          <span> Subscribe Now </span>
+        </ion-button>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <ion-img
+            src="assets/hero.png"
+            alt="Hero section image"
+            class="hero-img"
+          ></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <section id="discover">
+    <span id="tagline">Discover</span>
+    <h1>How It Works: Subscribe and Receive Your Surprise Box</h1>
+    <p class="sub-text">
+      Subscribe to our surprise subscription box and give your child the gift of
+      learning. Each month, we curate a box filled with educational materials
+      tailored to your child's age and interests.
+    </p>
+    <ion-grid>
+      <ion-row class="steps ion-justify-content-center ion-align-items-center">
+        <ion-col class="step">
+          <ion-img
+            src="assets/subscribe.svg"
+            alt="The Wisconsin State Capitol building in Madison, WI at night"
+            width="96"
+            height="96"
+          ></ion-img>
+          <h3>
+            Step 1:<br class="ion-hide-sm-down" />
+            Subscribe
+          </h3>
+          <p>
+            Select a subscription plan that suits your child's learning needs
+            and preferences.
+          </p>
+        </ion-col>
+        <ion-col class="step">
+          <ion-img
+            src="assets/customize.svg"
+            alt="The Wisconsin State Capitol building in Madison, WI at night"
+            width="96"
+            height="96"
+          ></ion-img>
+          <h3>
+            Step 2:<br class="ion-hide-sm-down" />
+            Personalise Your Box
+          </h3>
+          <p>
+            Tell us about your child's age, interests, and learning goals, and
+            we'll customize their surprise box accordingly.
+          </p>
+        </ion-col>
+        <ion-col class="step">
+          <ion-img
+            src="assets/surprise.svg"
+            alt="The Wisconsin State Capitol building in Madison, WI at night"
+            width="96"
+            height="96"
+          ></ion-img>
+          <h3>
+            Step 3:<br class="ion-hide-sm-down" />
+            Receive Your Surprise Box
+          </h3>
+          <p>
+            Sit back and relax as your child eagerly awaits the arrival of their
+            monthly surprise box filled with engaging learning materials.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+          <ion-button class="subscribe"
+            ><span> Subscribe Now </span></ion-button
+          >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

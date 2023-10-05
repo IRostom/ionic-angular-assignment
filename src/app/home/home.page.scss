@@ -1,27 +1,192 @@
-#container {
-  text-align: center;
+ion-content {
+  --background: #ab95f9;
+  --color: #fff;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  ion-button.subscribe {
+    --background: #fff;
+    --color: #896af9;
+    --border-color: #896af9;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-radius: 24px;
+    --box-shadow: 4px 4px 0px -1px #896af9;
+    --ripple-color: deeppink;
+    --padding-top: 15.5px;
+    --padding-bottom: 15.9px;
+    --padding-start: 27.09px;
+    --padding-end: 26px;
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+    span {
+      font-family: Nunito;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 38.4px;
+      text-transform: capitalize;
+    }
+  }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  #hero {
+    padding: 112px 64px;
+    ion-row {
+      margin-bottom: 24px;
+      margin-top: 0;
+      &:nth-last-child(2) {
+        margin-bottom: 80px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      ion-col *:not(ion-img) {
+        margin: 0;
+      }
+      h1 {
+        color: #fff;
+        text-align: center;
+        text-shadow: 2px 2px 0px #896af9;
+        font-family: Nunito;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 120%; /* 67.2px */
+      }
+      p {
+        color: #fff;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 36px */
+      }
+      ion-img {
+        width: 1220px;
+        height: 738px;
+        margin-inline: auto;
+      }
+    }
+  }
 
-  color: #8c8c8c;
+  #discover {
+    padding: 112px 64px;
+    background: url("/assets/discover-bg.png"), #fff9e6;
+    background-size: cover;
+    span#tagline {
+      display: block;
+      color: #000;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 24px */
+      margin-bottom: 16px;
+    }
+    h1 {
+      color: #000;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 57.6px */
+      margin-bottom: 24px;
+    }
+    p.sub-text {
+      color: #000;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 36px */
+      margin-bottom: 80px;
+    }
 
-  margin: 0;
-}
+    .steps {
+      margin-bottom: 48px;
+      .step {
+        color: #000;
+        *:not(:last-child) {
+          margin-bottom: 24px;
+          margin-top: 0;
+        }
+        ion-img {
+          width: 96px;
+          height: 96px;
+          margin-inline: auto;
+        }
 
-#container a {
-  text-decoration: none;
+        h3 {
+          text-align: center;
+          font-family: Nunito;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 130%; /* 41.6px */
+        }
+
+        p {
+          text-align: center;
+          font-family: Nunito;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+
+      .step:not(:last-child) {
+        margin-inline-end: 28px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    ion-button.subscribe {
+      --border-radius: 12px;
+      --box-shadow: 4px 4px 0px -1px #896af9;
+      --padding-top: 10px;
+      --padding-bottom: 10px;
+      --padding-start: 24px;
+      --padding-end: 24px;
+
+      span {
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: capitalize;
+      }
+    }
+    #hero {
+      padding: 56px 16px;
+      ion-row {
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+        }
+        ion-img {
+          height: 200px;
+          width: 100%;
+        }
+      }
+    }
+    #discover {
+      padding: 56px 16px;
+      background: #fff9e6;
+      h1 {
+        font-size: 40px;
+      }
+      .steps .step {
+        h3 {
+          font-size: 24px;
+        }
+      }
+      .steps .step:not(:last-child) {
+        margin-bottom: 28px;
+        margin-inline-end: 0;
+      }
+    }
+  }
 }
