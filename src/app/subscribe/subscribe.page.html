@@ -1,0 +1,143 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>subscribe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form class="form">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="form__fields">
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <p class="form__header">Subscribe</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <p class="form__header form__header__subtext">
+                to our Monthly Surprise Box
+              </p>
+            </ion-col>
+          </ion-row>
+          <div id="divider"></div>
+          <div class="form__section">
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <p class="form__section__header">Contact Information</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-input
+                  label="Your Name"
+                  labelPlacement="stacked"
+                  placeholder="e.g Osama Alshathri"
+                  class="custom-input"
+                ></ion-input> </ion-col
+            ></ion-row>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-input
+                  label="Email"
+                  labelPlacement="stacked"
+                  placeholder="Osama@gmail.com"
+                  class="custom-input"
+                ></ion-input> </ion-col
+            ></ion-row>
+          </div>
+          <div class="form__section">
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <p class="form__section__header">Child’s Information</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-input
+                  label="Child’s Full Name"
+                  labelPlacement="stacked"
+                  placeholder="e.g Sarah Mohammad"
+                  class="custom-input"
+                ></ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-row>
+                  <ion-col class="ion-no-padding">
+                    <ion-select
+                      label="Child’s Date of Birth"
+                      label-placement="stacked"
+                      fill="outline"
+                    >
+                      <ion-select-option value="apple">Apple</ion-select-option>
+                      <ion-select-option value="banana"
+                        >Banana</ion-select-option
+                      >
+                      <ion-select-option value="orange"
+                        >Orange</ion-select-option
+                      >
+                    </ion-select></ion-col
+                  >
+                  <ion-col class="ion-no-padding"
+                    ><ion-select label-placement="stacked" fill="outline">
+                      <ion-select-option value="apple">Apple</ion-select-option>
+                      <ion-select-option value="banana"
+                        >Banana</ion-select-option
+                      >
+                      <ion-select-option value="orange"
+                        >Orange</ion-select-option
+                      >
+                    </ion-select></ion-col
+                  >
+                  <ion-col class="ion-no-padding"
+                    ><ion-select label-placement="stacked" fill="outline">
+                      <ion-select-option value="apple">Apple</ion-select-option>
+                      <ion-select-option value="banana"
+                        >Banana</ion-select-option
+                      >
+                      <ion-select-option value="orange"
+                        >Orange</ion-select-option
+                      >
+                    </ion-select></ion-col
+                  >
+                </ion-row>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-select
+                  label="Grade"
+                  placeholder="e.g Grade 2"
+                  label-placement="stacked"
+                  fill="outline"
+                >
+                  <ion-select-option value="apple">Apple</ion-select-option>
+                  <ion-select-option value="banana">Banana</ion-select-option>
+                  <ion-select-option value="orange">Orange</ion-select-option>
+                </ion-select></ion-col
+              >
+            </ion-row>
+
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-radio-group value="strawberries">
+                  <ion-radio value="grapes">Grapes</ion-radio><br />
+                  <ion-radio value="strawberries">Strawberries</ion-radio><br />
+                  <ion-radio value="pineapple">Pineapple</ion-radio><br />
+                  <ion-radio value="cherries">Cherries</ion-radio>
+                </ion-radio-group>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-col>
+        <ion-col class="form__summary"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

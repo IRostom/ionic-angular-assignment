@@ -24,9 +24,11 @@
         </ion-col>
       </ion-row>
       <ion-row class="ion-justify-content-center">
-        <ion-button class="subscribe">
-          <span> Subscribe Now </span>
-        </ion-button>
+        <ion-col size="auto">
+          <ion-button [routerLink]="['/subscribe']" class="subscribe">
+            <span> Subscribe Now </span>
+          </ion-button>
+        </ion-col>
       </ion-row>
       <ion-row class="ion-justify-content-center">
         <ion-col>
@@ -101,9 +103,9 @@
       </ion-row>
       <ion-row class="ion-justify-content-center">
         <ion-col size="auto">
-          <ion-button class="subscribe"
-            ><span> Subscribe Now </span></ion-button
-          >
+          <ion-button [routerLink]="['/subscribe']" class="subscribe">
+            <span> Subscribe Now </span>
+          </ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
