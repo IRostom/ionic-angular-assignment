@@ -119,20 +119,25 @@ ion-content {
   }
   .form {
     margin-inline: auto;
-    border-radius: 24px;
+    width: fit-content;
     box-shadow: 0px 0px 52px 0px rgba(185, 169, 205, 0.2);
     ion-grid {
       --ion-grid-padding: 0;
+      --ion-grid-width: 1440px;
     }
     ion-col {
       --ion-grid-column-padding: 32px;
-      //   border-radius: 24px;
     }
     &__fields {
       background-color: #fff;
+      border-bottom-left-radius: 24px;
+      border-top-left-radius: 24px;
     }
     &__summary {
       background: #f1edfe;
+      border-bottom-right-radius: 24px;
+      border-top-right-radius: 24px;
+      max-width: 400px;
       &__header {
         color: #202124;
         text-align: start;
@@ -141,6 +146,7 @@ ion-content {
         font-style: normal;
         font-weight: 700;
         line-height: 31.999px; /* 133.33% */
+        margin: 0;
       }
       &__sub-header {
         color: #202124;
@@ -151,6 +157,7 @@ ion-content {
         font-weight: 400;
         line-height: 24px; /* 150% */
         letter-spacing: 0.1px;
+        margin-bottom: 24px;
       }
       ion-card.cart {
         --background: #fff;
