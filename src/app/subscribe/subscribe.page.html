@@ -124,13 +124,15 @@
               >
             </ion-row>
 
-            <ion-row>
+            <ion-row class="gap-8">
               <ion-col class="ion-no-padding">
-                <ion-radio-group value="strawberries">
-                  <ion-radio value="grapes">Grapes</ion-radio><br />
-                  <ion-radio value="strawberries">Strawberries</ion-radio><br />
-                  <ion-radio value="pineapple">Pineapple</ion-radio><br />
-                  <ion-radio value="cherries">Cherries</ion-radio>
+                <ion-radio-group
+                  class="custom-radio"
+                  value="gender"
+                  [allowEmptySelection]="true"
+                >
+                  <ion-radio value="boy">Boy</ion-radio>
+                  <ion-radio value="girl">Girl</ion-radio>
                 </ion-radio-group>
               </ion-col>
             </ion-row>
