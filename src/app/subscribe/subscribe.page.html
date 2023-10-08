@@ -156,13 +156,79 @@
           </div>
           <ion-row class="ion-justify-content-center">
             <ion-col>
-              <ion-button expand="block" [routerLink]="['/subscribe']" class="subscribe">
+              <ion-button
+                expand="block"
+                [routerLink]="['/subscribe']"
+                class="subscribe"
+              >
                 <span>Continue to payment</span>
               </ion-button>
             </ion-col>
           </ion-row>
         </ion-col>
-        <ion-col class="form__summary"></ion-col>
+        <ion-col class="form__summary">
+          <p class="form__summary__header">Subscribe</p>
+          <p class="form__summary__header form__summary__sub-header">
+            to our Monthly Surprise Box
+          </p>
+          <ion-card class="ion-no-margin cart">
+            <ion-card-content>
+              <ion-row>
+                <ion-col class="ion-no-padding"
+                  ><p class="cart__item">Mystery Box</p></ion-col
+                >
+                <ion-col class="ion-no-padding"
+                  ><p class="cart__item cart__item__left">
+                    <span>SAR</span> 456
+                  </p></ion-col
+                >
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-no-padding"
+                  ><p class="cart__item__subtext">X 1</p></ion-col
+                >
+                <ion-col class="ion-no-padding"
+                  ><p class="cart__item__subtext cart__item__left">
+                    Monthly
+                  </p></ion-col
+                >
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+          <ion-row class="breakdown__row">
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__key">Subtotal</p></ion-col
+            >
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__value"><span>SAR</span> 456</p></ion-col
+            >
+          </ion-row>
+          <ion-row class="breakdown__row">
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__key">Shipping</p></ion-col
+            >
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__value"><span>SAR</span> 456</p></ion-col
+            >
+          </ion-row>
+          <ion-row class="breakdown__row">
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__key">Taxes</p></ion-col
+            >
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__value"><span>SAR</span> 456</p></ion-col
+            >
+          </ion-row>
+          <div id="divider"></div>
+          <ion-row class="breakdown__row">
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__key">Total</p></ion-col
+            >
+            <ion-col class="ion-no-padding"
+              ><p class="breakdown__value"><span>SAR</span> 456</p></ion-col
+            >
+          </ion-row>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </form>

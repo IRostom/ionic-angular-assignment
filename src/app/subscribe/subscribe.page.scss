@@ -108,7 +108,6 @@ ion-content {
   .date-selectors {
     gap: 6px;
   }
-
   .label {
     color: #344054;
     font-size: 14px;
@@ -132,6 +131,102 @@ ion-content {
     &__fields {
       background-color: #fff;
     }
+    &__summary {
+      background: #f1edfe;
+      &__header {
+        color: #202124;
+        text-align: start;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 31.999px; /* 133.33% */
+      }
+      &__sub-header {
+        color: #202124;
+        text-align: start;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.1px;
+      }
+      ion-card.cart {
+        --background: #fff;
+        padding: 16px 16px 40px 16px;
+        border-radius: 8px;
+        box-shadow: none;
+        margin-bottom: 24px;
+      }
+      .cart {
+        &__item {
+          color: #202124;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+          span {
+            font-weight: 400;
+          }
+          &__subtext {
+            color: #838383;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px; /* 133.333% */
+          }
+          &__left {
+            text-align: end;
+          }
+        }
+      }
+      .breakdown {
+        &__key {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 21px */
+          margin: 0;
+          color: #000;
+        }
+        &__value {
+          color: #202124;
+          text-align: right;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+          margin: 0;
+          span {
+            color: #202124;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+        &__row:not(:last-child) {
+          margin-bottom: 11px;
+        }
+        &__row:last-child {
+          .breakdown__key {
+            color: #333;
+            font-size: 17px;
+            font-weight: 600;
+          }
+          .breakdown__value {
+            font-size: 20px;
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      #divider {
+        border-color: #d1c5fb;
+      }
+    }
     &__header {
       color: #202124;
       text-align: start;
@@ -148,9 +243,6 @@ ion-content {
         letter-spacing: 0.1px;
         margin-top: 2px;
       }
-    }
-    &__summary {
-      background: #f1edfe;
     }
     &__section {
       margin-bottom: 32px;
