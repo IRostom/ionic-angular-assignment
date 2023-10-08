@@ -4,6 +4,12 @@ ion-content {
   --padding-bottom: 112px;
   --padding-start: 64px;
   --padding-end: 64px;
+  @media (max-width: 425px) {
+    --padding-top: 56px;
+    --padding-bottom: 56px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
   #divider {
     width: 100%;
     margin: 16px 0;
@@ -103,6 +109,10 @@ ion-content {
       font-weight: 900;
       line-height: 38.4px;
       text-transform: capitalize;
+      @media (max-width: 425px) {
+        font-size: 20px;
+        line-height: 28px; /* 140% */
+      }
     }
   }
   .date-selectors {
@@ -121,23 +131,40 @@ ion-content {
     margin-inline: auto;
     width: fit-content;
     box-shadow: 0px 0px 52px 0px rgba(185, 169, 205, 0.2);
+    border-radius: 24px;
+    @media (max-width: 425px) {
+      width: auto;
+      border-radius: 16px;
+    }
     ion-grid {
       --ion-grid-padding: 0;
-      --ion-grid-width: 1440px;
     }
     ion-col {
       --ion-grid-column-padding: 32px;
+      @media (max-width: 425px) {
+        --ion-grid-column-padding: 16px;
+      }
     }
     &__fields {
       background-color: #fff;
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
+      @media (max-width: 425px) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
     }
     &__summary {
       background: #f1edfe;
       border-bottom-right-radius: 24px;
       border-top-right-radius: 24px;
       max-width: 400px;
+      @media (max-width: 425px) {
+        border-bottom-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 0;
+      }
       &__header {
         color: #202124;
         text-align: start;
