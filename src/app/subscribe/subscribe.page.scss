@@ -198,6 +198,11 @@ ion-content {
           font-weight: 700;
           line-height: 24px; /* 150% */
           margin: 0;
+          &__small {
+            font-size: 14px;
+            font-weight: 400;
+            color: #707070;
+          }
           span {
             color: #202124;
             font-size: 16px;
