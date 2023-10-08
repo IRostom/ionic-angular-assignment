@@ -83,6 +83,28 @@ ion-content {
       line-height: 24px; /* 150% */
     }
   }
+  ion-button.subscribe {
+    --background: #fff;
+    --color: #896af9;
+    --border-color: #896af9;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-radius: 16px;
+    --box-shadow: 4px 4px 0px -1px #896af9;
+    --padding-top: 8px;
+    --padding-bottom: 8px;
+    --padding-start: 26px;
+    --padding-end: 26px;
+
+    span {
+      font-family: Nunito;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 38.4px;
+      text-transform: capitalize;
+    }
+  }
   .date-selectors {
     gap: 6px;
   }
