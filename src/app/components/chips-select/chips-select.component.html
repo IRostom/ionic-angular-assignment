@@ -1,0 +1,14 @@
+<ion-grid>
+  <ion-row class="chips-container">
+    <ion-col *ngFor="let label of labels" class="ion-no-padding chip-container">
+      <ion-chip
+        (click)="toggle(label)"
+        [class.on]="isSelected(label)"
+        [class.off]="!isSelected(label)"
+        outline="true"
+      >
+        <ion-label>{{ label }}</ion-label>
+      </ion-chip>
+    </ion-col>
+  </ion-row>
+</ion-grid>

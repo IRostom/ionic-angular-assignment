@@ -48,11 +48,7 @@
             ></ion-row>
           </div>
           <div class="form__section">
-            <ion-row>
-              <ion-col class="ion-no-padding">
-                <p class="form__section__header">Child’s Information</p>
-              </ion-col>
-            </ion-row>
+            <p class="form__section__header">Child’s Information</p>
 
             <ion-row>
               <ion-col class="ion-no-padding">
@@ -67,11 +63,12 @@
 
             <ion-row>
               <ion-col class="ion-no-padding">
-                <ion-row>
+                <p class="label">Child’s Date of Birth</p>
+                <ion-row class="date-selectors">
                   <ion-col class="ion-no-padding">
                     <ion-select
-                      label="Child’s Date of Birth"
-                      label-placement="stacked"
+                      class="custom-select"
+                      placeholder="Date"
                       fill="outline"
                     >
                       <ion-select-option value="apple">Apple</ion-select-option>
@@ -84,8 +81,12 @@
                     </ion-select></ion-col
                   >
                   <ion-col class="ion-no-padding"
-                    ><ion-select label-placement="stacked" fill="outline">
-                      <ion-select-option value="apple">Apple</ion-select-option>
+                    ><ion-select
+                      class="custom-select"
+                      placeholder="Month"
+                      fill="outline"
+                    >
+                      <ion-select-option value="apple">Jan</ion-select-option>
                       <ion-select-option value="banana"
                         >Banana</ion-select-option
                       >
@@ -95,7 +96,11 @@
                     </ion-select></ion-col
                   >
                   <ion-col class="ion-no-padding"
-                    ><ion-select label-placement="stacked" fill="outline">
+                    ><ion-select
+                      class="custom-select"
+                      placeholder="Year"
+                      fill="outline"
+                    >
                       <ion-select-option value="apple">Apple</ion-select-option>
                       <ion-select-option value="banana"
                         >Banana</ion-select-option
@@ -111,21 +116,23 @@
 
             <ion-row>
               <ion-col class="ion-no-padding">
+                <p class="label">Grade</p>
                 <ion-select
-                  label="Grade"
                   placeholder="e.g Grade 2"
-                  label-placement="stacked"
                   fill="outline"
+                  interface="action-sheet"
+                  class="custom-select"
                 >
-                  <ion-select-option value="apple">Apple</ion-select-option>
-                  <ion-select-option value="banana">Banana</ion-select-option>
-                  <ion-select-option value="orange">Orange</ion-select-option>
+                  <ion-select-option value="1">Grade 1</ion-select-option>
+                  <ion-select-option value="2">Grade 2</ion-select-option>
+                  <ion-select-option value="3">Grade 3</ion-select-option>
                 </ion-select></ion-col
               >
             </ion-row>
 
-            <ion-row class="gap-8">
+            <ion-row>
               <ion-col class="ion-no-padding">
+                <p class="label">Gender</p>
                 <ion-radio-group
                   class="custom-radio"
                   value="gender"
@@ -134,6 +141,16 @@
                   <ion-radio value="boy">Boy</ion-radio>
                   <ion-radio value="girl">Girl</ion-radio>
                 </ion-radio-group>
+              </ion-col>
+            </ion-row>
+          </div>
+          <div class="form__section">
+            <p class="form__section__header">As a parent select any 3 topics</p>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <app-chips-select
+                  [labels]="['Arabic', 'Islamic', 'English', 'History', 'Sports' ]"
+                ></app-chips-select>
               </ion-col>
             </ion-row>
           </div>

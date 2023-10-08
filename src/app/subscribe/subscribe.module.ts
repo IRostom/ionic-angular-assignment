@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { SubscribePageRoutingModule } from './subscribe-routing.module';
 
 import { SubscribePage } from './subscribe.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     SubscribePageRoutingModule
   ],
   declarations: [SubscribePage]
